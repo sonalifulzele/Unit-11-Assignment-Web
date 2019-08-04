@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light" style="color: #17a2b8;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <h1 class="text-white bg-info"  style="margin-left:50px; padding: 0 15px; font-family: 'Times New Roman', Times, serif; font-weight: bold"><a class="home" href="index.html">Latitude</a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="MaxTemp.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>               
+                        <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Data <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comparision</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="container-fluid" style="padding:20px 50px;">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 bg-light" style="padding: 20px 15px"> 
+                <div style="background-color: white; padding: 20px 30px;">
+                    <h2 class="text-info" style="padding: 20 15px; font-family: 'Times New Roman', Times, serif; font-weight: bold">Cloudiness</h2>
+                    <hr/>
+                    <p style="display: inline-block;">                     
+                        <img src="assets/Images/Fig3.png" height=65% width= 75% style="float: left; padding: 0 15px;">
+                        <br>The cloudiness seems to be distributed evenly across the latitudes and there is no prominent trend or corelation between the latitude and cloudiness.
+                        <br><br>There are few trend lines with perfectly alligned plots that are visible and maybe connected to other weather factors.                    
+                    </p>    
+                </div>                   
+            </div>
+            <div class="col" style="padding: 20px 15px">
+                <div style="background-color: white; padding: 20px 30px;">
+                    <h2 class="text-info" style="padding: 20 15px; font-family: 'Times New Roman', Times, serif; font-weight: bold">Visualizations</h2>
+                    <hr/>
+                    <div class="container">
+                        <!-- Row 1 -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="MaxTemp.html">
+                                    <img src="assets/Images/Fig1.png" height=100% width= 100%" class="mx-auto d-block"> 
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="Humidity.html">
+                                    <img src="assets/Images/Fig2.png" height=100% width= 100%" class="mx-auto d-block"> 
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <!-- Row 2 -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="Cloudiness.html">
+                                    <img src="assets/Images/Fig3.png" class="imgborder" height=100% width= 100%" class="mx-auto d-block"> 
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="WindSpeed.html">
+                                    <img src="assets/Images/Fig4.png" height=100% width= 100%" class="mx-auto d-block"> 
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div style="background-color:black; color: white; text-align: center; border-top: 5px solid darkcyan; padding: 8px">
+        <span> <p>&copy; Copyright Coding Bootcamp 2019</p> </span>
+    </div>
+</body>
+
+</html>
+
+
